@@ -1,0 +1,10 @@
+pinecone-client
+langchain
+transformers
+pillow
+pandas
+requests
+torch
+groq
+flask
+requests

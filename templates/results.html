@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Query Results</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.5em;
+            color: #2c3e50;
+            margin-top: 30px;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+
+        .content {
+            font-size: 1.2em;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .content strong {
+            color: #2c3e50;
+        }
+
+        .result-box {
+            background-color: #f9f9f9;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        .back-link {
+            display: block;
+            text-align: center;
+            margin-top: 30px;
+            font-size: 1.2em;
+            color: #2980b9;
+            text-decoration: none;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+
+       
+    </style>
+</head>
+<body>
+    <h1>Query Results</h1>
+    <div class="container">
+        <div class="content">
+            <p><strong>Document Description:</strong></p>
+            <div class="result-box">
+                {{ description }}
+            </div>
+        </div>
+
+        <div class="content">
+            <p><strong>Generated Response:</strong></p>
+            <div class="result-box">
+                {{ response }}
+            </div>
+        </div>
+
+        <a href="/" class="back-link">Go back</a>
+    </div>
+
+    
+</body>
+</html>
+

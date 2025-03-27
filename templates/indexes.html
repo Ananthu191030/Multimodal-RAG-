@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Query System</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #6c5ce7;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        label {
+            font-size: 1.1rem;
+            font-weight: bold;
+        }
+
+        input[type="text"] {
+            padding: 10px;
+            font-size: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 100%;
+        }
+
+        input[type="text"]:focus {
+            border-color: #6c5ce7;
+            outline: none;
+        }
+
+        button {
+            background-color: #6c5ce7;
+            color: white;
+            font-size: 1rem;
+            border: none;
+            border-radius: 5px;
+            padding: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #4e3ccf;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: absolute;
+            bottom: 0;
+            margin-top: 40px;
+            width: 100%;
+        }
+
+        .background-img {
+            background-image: url('https://www.akshharam.com/globalpannel/public/images/1723017398.jpg'); /* Replace with actual image URL */
+            background-size: cover;
+            background-position: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+    <div class="background-img"></div>
+    <header>
+        <h1>A Multimodal Query System for Art forms in Kerala</h1>
+    </header>
+
+    <div class="container">
+        <form action="/results" method="POST" enctype="multipart/form-data">
+            <label for="query_text">Text Query:</label>
+            <input type="text" id="query_text" name="query_text" placeholder="Enter your text query here...">
+        
+            <label for="query_image">Upload Image:</label>
+            <input type="file" id="query_image" name="query_image" accept="image/*">
+        
+            <button type="submit">Submit</button>
+        </form>
+        
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Query System</p>
+    </footer>
+</body>
+</html>
